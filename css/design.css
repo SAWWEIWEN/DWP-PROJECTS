@@ -7,7 +7,7 @@
 
 .background {
     width: 100%;
-    height: 150vh;
+    height: 140vh;
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
     url("../img/forest.jpg");
     background-size: cover;
@@ -114,16 +114,12 @@ nav ul li:hover:after{
     text-transform: uppercase;
     font-size: 24px;
     color: #99FFcc;
-    margin: 15px 0px 5px 30px;
+    margin: 10px 0px 0px 15px;
 }
 
-.contentus .content h3{
-    margin-top: -150px;
-    color: #5d5d5d;
-}
 
 .contentus .content p{
-    margin-top: 10px;
+    margin-top: -5px;
     font-family: sans-serif;
     font-size: 18px;
     line-height: 1.5;
@@ -138,20 +134,20 @@ nav ul li:hover:after{
 .contentus{
     width:80%;
     position: absolute;
-    top:130%;
+    top:150%;
     transform: translateY(-50%);
     text-align:left;
     color:#fff;
     float: left;
     border: 3px solid white;
     margin-left: 10%;
-    height: 400px;
+    height: 600px;
 }
 
 .content{
     width:100%;
     position: absolute;
-    top:80%;
+    top:60%;
     transform: translateY(-50%);
     text-align:left;
     margin-left:30px;
@@ -170,25 +166,6 @@ nav ul li:hover:after{
     line-height: 25px;
 }
 
-
-.contentus2 .title{
-    text-transform: uppercase;
-    font-size: 24px;
-    color: #99FFcc;
-    margin: 15px 0px 5px 30px;
-}
-
-.contentus2 .content h3{
-    margin-top: -150px;
-    color: #5d5d5d;
-}
-
-.contentus2 .content p{
-    margin-top: 10px;
-    font-family: sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-}
 
 .image_position img{
  float: right;
@@ -259,6 +236,10 @@ button:hover{
   .col-2{
    flex-grow: 2;
   }
+
+  .col-3 h3{
+    color: yellow;
+  }
   
   .footer div h3{
     font-weight: 300;
@@ -268,7 +249,7 @@ button:hover{
   .col-1 a{
     display: block;
     text-decoration: none;
-    color:#efefef;
+    color:lightblue;
     margin-bottom: 10px;
   }
   form input{
