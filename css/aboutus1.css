@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Exo;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family: Exo;
+    src: url(/fonts/exo-2-0.medium.otf);
+}
+
+.main{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.navigation{
+    background: black;
+    display: flex;
+    height: 145px;
+}
+
+.top {
+    width: 100%;
+    margin:auto;
+    padding: 7px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    border-radius: 120px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.top ul li {
+    display:inline-block;
+    margin: 30px;
+    position: relative;
+}
+
+.top ul li a {
+    text-decoration:none;
+    color:#00ff00;
+    text-transform: uppercase;
+}
+
+.top ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:rgb(254, 240, 255);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.top ul li:hover:after{
+    width:100%;
+}
+
+
+.profile-card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #1C0784;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin:  35px;
+    border: 4px solid #FFCCFF;
+}
+
+.profile-card:hover{
+    border-radius: 60px;
+    height: 350px;
+}
+
+.profile-card .img{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+}
+
+.profile-card:hover .img{
+    transform: translateY(-80px);
+}
+
+.img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+}
+
+.profile-card:hover img{
+    border-radius: 50%;
+}
+
+.caption{
+    text-align: center;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.profile-card:hover .caption{
+    opacity: 1;
+}
+
+
+.caption h3{
+    font-size: 25px;
+    color:aqua;
+    margin: 0px 0px 13px 0px;
+}
+
+.caption p{
+    font-size: 18px;
+    color:aliceblue;
+    margin: 3px 0 10px 0;
+}
+
+.caption .social-links a{
+    color: whitesmoke;
+    margin-right: 8px;
+    margin-bottom: 14px;
+    font-size: 30px;
+    transition: .6s;
+}
+
+.social-links a:hover{
+    color: aquamarine;
+}
+
+.footer{
+    background-color : #333 ;
+	padding: 20px 5%;
+	width: 100%;
+	color: #efefef;
+	display: flex;
+  }
+
+.footer content h3{
+    color: yellow;
+}
+
+
+

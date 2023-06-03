@@ -1,0 +1,75 @@
+h1 {
+    font-family: Arial;
+    font-style: italic;
+    color: white;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+    text-align: left;
+  }
+  
+  body {
+    background-color: white;
+    background-image: url("../img/corporate-team-building-activities.jpg");
+    background-repeat: no-repeat; 
+    background-position: top;
+    background-attachment: scroll;
+    background-size: 1600px 450px;
+  }
+  
+  .footer{
+      margin-top: 150px;
+      background-color : #333 ;
+        padding: 80px 5%;
+        width: 90%;
+        color: #efefef;
+        display: flex;
+    }
+  .footer div{
+    text-align: center;;
+  }
+  .col-2{
+    flex-grow: 2;
+  }
+  .footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  .col-1 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef;
+    margin-bottom: 10px;
+  }
+  form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:40px;
+    outline:none;
+    border: none;
+  }
+  form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .social-icons{
+    margin-top: 30px;
+  }
+  .social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+  }
