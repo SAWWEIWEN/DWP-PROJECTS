@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
     font-family: Arial;
     font-style: italic;
@@ -20,14 +25,132 @@ h1 {
     background-attachment: scroll;
     background-size: 1600px 450px;
   }
+
+  nav{
+    background: #1a1a1a;
+    width: 92%;
+    padding: 10px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+  }
   
+  .logo{
+    width: 120px;
+  }
+  
+  .user-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+  
+  nav ul{
+    width: 100%;
+    text-align: right;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .submenu-wrap{
+    position: absolute;
+    top: 100%;
+    right:1%;
+    width:240px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  
+  .submenu-wrap.open-menu{
+    max-height: 400px;
+  }
+  
+  .submenu{
+    background: #fff;
+    padding: 10px;
+    margin: 6px;
+  }
+  
+  .userinfo{
+    display: flex;
+    align-items: center;
+  }
+  
+  .userinfo h3{
+    font-weight: 500;
+  }
+  
+  .userinfo ion-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px ;
+  }
+  
+  .submenu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0px 10px;
+  }
+  
+  .submenu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0px;
+  }
+  
+  .submenu-link p{
+    width: 100%;
+  }
+  
+  .submenu-link ion-icon{
+    width: 25px;
+    height: 25px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px 10px;
+    margin-left: 1px;
+    margin-right: 10px;
+  }
+  
+  .submenu-link span{
+    font-size: 22px;
+    transition: tranform 0.5s;
+  }
+  
+  .submenu-link:hover span{
+    transform: translateX(5px);
+  }
+  
+  .submenu-link:hover p{
+    font-weight: 600;
+  }
+
   .footer{
       margin-top: 150px;
       background-color : #333 ;
-        padding: 80px 5%;
-        width: 90%;
-        color: #efefef;
-        display: flex;
+      padding: 60px 5%;
+      width: 90%;
+      color: #efefef;
+      display: flex;
     }
   .footer div{
     text-align: center;;
