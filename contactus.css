@@ -7,8 +7,6 @@
     box-sizing: border-box;
 }
 
-/*--------------------------------------------------header-----------------------------------*/
-
 .navigation{
     background: black;
     display: flex;
@@ -58,8 +56,6 @@
 .top ul li:hover:after{
     width:100%;
 }
-
-/*-----------------------------------------------------------------------------*/
 
 .contact{
     position: relative;
@@ -136,8 +132,6 @@
     color: rgba( 255, 255, 255);
     font-weight: 400;
 }
-
-/*-------------------------------contactForm--------------------*/
 
 .contactform{
     width: 40%;

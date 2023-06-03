@@ -4,7 +4,6 @@
     font-family:" Comic Sans MS";
 }
 
-/*--------------------------------header---------------------------------*/
 .top {
     width: 95%;
     margin:auto;
@@ -48,8 +47,6 @@
 .top ul li:hover:after{
     width:100%;
 }
-
-/*-----------------------------------------------------------------------------*/
 
 .background{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("forest.jpg");
@@ -98,8 +95,6 @@ button{
     font-weight: bold;
 }
 
-/*------------------------------------ inputbox ------------------------------------*/
-
 .inputbox{
     position: relative;
     margin: 35px 0px;
@@ -118,7 +113,6 @@ button{
     transition: .5s;
 }
 
-/* make the the word 'email' & 'password' move */
 input:focus ~ label,
 input:focus ~:valid{
     top: -5px;
@@ -143,8 +137,6 @@ input:focus ~:valid{
     top: 20px;
 }
 
-/*--------------------------------------- forget -------------------------------------*/
-
 .forget{
     margin: -15px 0px 15px 0px;
     font-size: 15px;
@@ -167,8 +159,6 @@ input:focus ~:valid{
 .forget label a:hover{
     text-decoration: underline;
 }
-
-/*------------------------------------ signup ------------------------------------*/
 
 .signup{
     font-size: .8em;

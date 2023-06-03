@@ -4,7 +4,6 @@
     font-family:" Comic Sans MS";
 }
 
-/*--------------------------------header---------------------------------*/
 .top {
     width: 95%;
     margin:auto;
@@ -48,8 +47,6 @@
 .top ul li:hover:after{
     width:100%;
 }
-
-/*-----------------------------------------------------------------------------*/
 
 .background{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("forest.jpg");
@@ -98,8 +95,6 @@ button{
     font-weight: bold;
 }
 
-/*------------------------------------ inputbox ------------------------------------*/
-
 .inputbox{
     position: relative;
     margin: 18px 0px;
@@ -119,7 +114,6 @@ button{
     transition: .5s;
 }
 
-/* make the the word 'email' & 'password' move */
 .inputbox input:focus ~ label,
 .inputbox input:valid ~ label{
     top: -5px;
@@ -148,8 +142,6 @@ button{
     cursor: pointer;
 }
 
-/*--------------------------------------- agree -------------------------------------*/
-
 .agree{
     margin: -10px 0px 20px 0px;
     font-size: 15px;
@@ -162,8 +154,6 @@ button{
     margin : 0px 5px;
 }
 
-
-/*------------------------------------ signup ------------------------------------*/
 
 .signup{
     font-size: .8em;

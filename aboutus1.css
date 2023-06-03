@@ -24,7 +24,6 @@ html {
     background-color: blue;
 }
 
-/*------------------------header--------------------*/
 .navigation{
     background: black;
     display: flex;
@@ -75,7 +74,6 @@ html {
     width:100%;
 }
 
-/*------------------------profile-------------------------*/
 
 .profile-card{
     position: relative;
@@ -128,7 +126,6 @@ html {
     opacity: 1;
 }
 
-/*----------------------------caption-----------------------*/
 
 .caption h3{
     font-size: 25px;
@@ -153,8 +150,6 @@ html {
 .social-links a:hover{
     color: aquamarine;
 }
-
-/*---------------------------footer---------------------------*/
 
 .footer{
     background-color : #333 ;
