@@ -28,11 +28,7 @@ h4 {
 
 body {
     background-color: white;
-<<<<<<< HEAD:location.css
-    background-image: url("img/forestridge.jpg");
-=======
     background-image: url("../img/forestridge.jpg");
->>>>>>> 8d19804654ebe1c91fa27d98b8921f53abbaca04:css/location.css
     background-repeat: no-repeat; 
     background-position: top;
     background-attachment: scroll;
