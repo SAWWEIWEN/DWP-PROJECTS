@@ -9,19 +9,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head>
 
 <body>
-    <nav class="navigation">
 
-            <div class="top">
-                <a href="mainpage.html"><img src="../img/logo2.png" class="logo"></a>
-                <ul>
-                    <li><a href="mainpage.html">Home</a></li>
-                    <li><a href="#">Room</a></li>
-                    <li><a href="location.html">Location</a></li>
-                    <li><a href="Vision.html">Our vision & mission </a></li>
-                    <li><a href="login1.html">Sign in / Sign up</a></li>
-                </ul>
+    <nav>
+        <img src="../img/ruixi.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ion-icon name="person-circle-outline" class="user-pic" onclick="toggleMenu()"></ion-icon>
+
+    <div class="submenu-wrap" id="subMenu">
+        <div class="submenu">
+
+            <div class="userinfo">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <h3>Nahida</h3>
             </div>
-        
+            <hr>
+
+            <a href="#" class="submenu-link">
+                <ion-icon name="create-outline"></ion-icon>
+                <p>Edit profile</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+                <ion-icon name="settings-outline"></ion-icon>
+                <p>Setting</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+                <ion-icon name="help-circle-outline"></ion-icon>
+                <p>Help</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+                <ion-icon name="log-out-outline"></ion-icon>
+                <p>log out</p>
+                <span>></span>
+            </a>
+        </div>
+    </div>
     </nav>
     
     <div class="main">
@@ -73,11 +105,40 @@
     </div>
     
     <div class="footer">
-        <div class="content">
+        <div class ="col-1">
           <h3>ABOUT US</h3>
           <p>Forest Fridge Resort is a place to reconnect<br> with the natural flow of life, make meaningful <br>changes to your daily routine, and<br>enjoy newfound happiness.</p>
         </div>
-    </div>
+          
+        <div class ="col-2">
+          <h3>NEWSLETTER</h3>
+          <form>
+            <input type ="email" placeholder="Your Email Address">
+            <br>
+            <button type ="submit">SUBSCRIBE NOW</button>
+          </form>
+        </div>
+      
+        <div class ="col-3">
+          <h3>CONTACT US</h3>
+          <p>+0115489615<br>Forestfridgeresort@gmail.com</p>
+          <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div> 
+      </div>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
 </body>
 </html>

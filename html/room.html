@@ -7,8 +7,57 @@
 </head>
 <body>
 
+  <div class="profile">
+    <nav>
+        <img src="../img/ruixi.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ion-icon name="person-circle-outline" class="user-pic" onclick="toggleMenu()"></ion-icon>
+
+    <div class="submenu-wrap" id="subMenu">
+        <div class="submenu">
+
+            <div class="userinfo">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <h3>Nahida</h3>
+            </div>
+            <hr>
+
+            <a href="#" class="submenu-link">
+                <ion-icon name="create-outline"></ion-icon>
+                <p>Edit profile</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+                <ion-icon name="settings-outline"></ion-icon>
+                <p>Setting</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+                <ion-icon name="help-circle-outline"></ion-icon>
+                <p>Help</p>
+                <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+                <ion-icon name="log-out-outline"></ion-icon>
+                <p>log out</p>
+                <span>></span>
+            </a>
+        </div>
+    </div>
+    </nav>
+</div>
+
   <div class="container">
     <h2>Choose a Fancy Room that you prefer.. </h2>
+
     <div class="room">
       <div class="room-image">
         <img src="../img/harmony.jpg" alt="harmonytwin">
@@ -107,6 +156,17 @@
       </div>
     </div> 
   </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
 
 </body>
 </html>
