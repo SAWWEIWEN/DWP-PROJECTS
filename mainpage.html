@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Forest Ridge | Hotel Booking Website</title>
+       <link rel="stylesheet" href="design.css">
+    </head>
+
+<body>
+    
+    
+        <div class="top">
+            <a href="mainpage.html"><img src="logo2.png" class="logo"></a>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="#">Room</a></li>
+                <li><a href="location.html">Contact us</a></li>
+                <li><a href="Vision.html">Our vision & mission </a></li>
+                <li><a href="login1.html">Sign in / Sign up</a></li>
+            </ul>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img class="slideimage" src="forest.jpg" style="width:100%; height: 550px;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img class="slideimage" src="black.jpg" style="width:100%; height: 550px;">
+            </div>
+            
+            <div class="mySlides fade">
+              <img class="slideimage" src="kokomi2.jpg" style="width:100%; height: 550px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slideimage" src="forest.jpg" style="width:100%; height: 550px;">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slideimage" src="black.jpg" style="width:100%; height: 550px;">
+            </div>
+            
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>  
+        </div>
+
+        <br><br>
+
+        <div class="background">
+            
+        <div class="contentus">
+
+            <div class="title">
+                <h1><u>About Us</u></h1>
+            </div>
+            
+            <div class="content">
+                <h3>Wife</h3>
+                <p>qwqwqwqwqwqwqwqwqwqqwwq</p>
+                <p>wweweweweweweweweewewew</p>
+                <p>ewdcjndfbienenfuefeufef</p>
+              
+                <div class="button">
+                    <button type="button"><span></span>MORE</button>
+                </div>
+            </div>
+
+                <div class="image_position">
+                    <img src="kokomi2.jpg" style="height: 350px;">
+                </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3500); // Change image second
+        }
+        </script>
+
+</body>
+
+</html>
+
