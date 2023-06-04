@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+
+    <div class="background">
+    
+        <div class="top">
+            <a href="mainpage.html"><img src="../img/LOGO.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html" target="_blank">Location</a></li>
+                <li><a href="Vision.html">Our vision & mission </a></li>
+                <li><a href="login1.html">Sign in</a></li>
+            </ul>
+        </div>
+       
+        <section>
+            <div class="form_box">
+                <div class="form_value">
+                    <form action="">
+
+                        <h1>Sign up</h1>
+
+                        <div class="inputbox">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="username" required>
+                            <label for="username">Username</label>
+                        </div>
+
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="inputbox">
+                            <ion-icon id="lock" name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="password" required>
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="inputbox">
+                            <ion-icon id="lock2" name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="confpassword" required>
+                            <label for="confpassword">Confirm Password</label>
+                        </div>
+
+
+                        <div class="agree">
+                            <label for="check"><input type="checkbox" required> I agree to the term
+                            & conditions</label>
+                        </div>
+                        
+                        <button>Sign up</button>
+                        <div class="signup">
+                            <p>Already have a account? <a href="login1.html">Sign in</a></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>   
+    </div>   
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let lock = document.getElementById("lock");
+        let lock2 = document.getElementById("lock2");
+        let password = document.getElementById("password");
+        let confpassword = document.getElementById("confpassword");
+
+        lock.onclick = function()
+        {
+            if(password.type == "password")
+            {
+                password.type = "text";
+            }
+            else{
+                password.type = "password";
+            }
+        }
+
+        lock2.onclick = function()
+        {
+            if(confpassword.type == "password")
+            {
+                confpassword.type = "text";
+            }
+            else{
+                confpassword.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>

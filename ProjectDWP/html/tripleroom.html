@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/498bc0face.js" crossorigin="anonymous"></script>
+    <style>
+       .center {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        height: 500px;
+        }
+
+        table {
+        width: 5%;
+        margin-left: 0px;
+        margin-right: 2px;
+        }
+
+        td {
+        padding: 50px;
+        text-align: center;
+        border: 0px solid #ccc;
+        }
+
+        td img {
+        max-width: 100px;
+        max-height: 100px;
+        }
+
+        body {
+        width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: rgb(255, 255, 255);
+        }
+
+
+        div.elem-group {
+        margin: 20px 0;
+        }
+
+        div.elem-group.inlined {
+        width: 49%;
+        display: inline-block;
+        float: left;
+        margin-left: 1%;
+        }
+
+        label {
+        display: block;
+        font-family: 'Nanum Gothic';
+        padding-bottom: 10px;
+        font-size: 1.25em;
+        }
+
+        input, select, textarea {
+        border-radius: 10px;
+        border: 2px solid #777;
+        box-sizing: border-box;
+        font-size: 1.25em;
+        font-family: 'Nanum Gothic';
+        width: 100%;
+        padding: 10px;
+        }
+
+        div.elem-group.inlined input {
+        width: 95%;
+        display: inline-block;
+        }
+
+        textarea {
+        height: 250px;
+        }
+
+        hr {
+        border: 1px dotted #ccc;
+        }
+
+        button {
+        height: 50px;
+        background: orange;
+        border: none;
+        color: white;
+        font-size: 1.25em;
+        font-family: 'Nanum Gothic';
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        button:hover {
+        border: 2px solid black;
+        }
+    </style>
+
+    <script>
+        var currentDateTime = new Date();
+        var year = currentDateTime.getFullYear();
+        var month = (currentDateTime.getMonth() + 1);
+        var date = (currentDateTime.getDate() + 1);
+
+        if(date < 10) {
+        date = '0' + date;
+        }
+        if(month < 10) {
+        month = '0' + month;
+        }
+
+        var dateTomorrow = year + "-" + month + "-" + date;
+        var checkinElem = document.querySelector("#checkin-date");
+        var checkoutElem = document.querySelector("#checkout-date");
+
+        checkinElem.setAttribute("min", dateTomorrow);
+
+        checkinElem.onchange = function () {
+            checkoutElem.setAttribute("min", this.value);
+        }
+    </script>
+</head>
+
+<body>
+
+   <img src="../img/triple.jpg" alt="queen" class="center">
+
+   <div class="table">
+   <table>
+    <tr>
+        <td><img src="../img/f&b.png">
+          <h3>Food & Drinks</h3>
+
+        </td>
+        <td><img src="../img/balcony.png">
+          <h3>Balcony</h3>
+        </td>
+        <td><img src="../img/fv.png" alt="" height=100 width=100 />
+          <h3>Forest View</h3>
+        </td>
+        <td><img src="../img/parking.png" alt="" height=100 width=100 />
+          <h3>Free Parking</h3>
+        </td>
+    </tr>
+    <tr>
+        <td><img src="../img/wifi.png">
+          <h3>Free Wifi</h3>
+        </td>
+        <td><img src="../img/swimming.png">
+          <h3>Swimming Pool</h3>
+        </td>
+        <td><img src="../img/waterfall.png" alt="" height=100 width=100 />
+          <h3>Waterfall</h3>
+        </td>
+        <td><img src="../img/icon-cleaner-13.jpg" alt="" height=100 width=100 />
+          <h3>Room Service</h3>
+        </td>
+    </tr>
+    </table>
+  </div>
+    
+  <fieldset>
+    <legend style="font-size: 1.5em;">Make A Reservation</legend>
+    <form action="reservation.php" method="post">
+        <div class="elem-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="Zavier Ong" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="zavier@email.com" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="visitor_phone" placeholder="012-652-4521" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkin-date">Check-in Date</label>
+          <input type="date" id="checkin-date" name="checkin" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="checkout-date">Check-out Date</label>
+          <input type="date" id="checkout-date" name="checkout" required>
+        </div>
+        <div class="elem-group">
+          <label for="room-selection">Select Room Preference</label>
+          <select id="room-selection" name="room_preference" required>
+              <option value="">Choose a Room from the List</option>
+              <option value="connecting">Connecting</option>
+              <option value="adjoining">Adjoining</option>
+              <option value="adjacent">Adjacent</option>
+          </select>
+        </div>
+        <hr>
+        <div class="elem-group">
+          <label for="message">Anything Else?</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+        </div>
+        <button type="submit">Book The Rooms</button>
+      </form>
+    </fieldset>
+
+    
+
+</body>
+</html>
