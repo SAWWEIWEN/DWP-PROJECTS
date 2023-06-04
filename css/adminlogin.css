@@ -122,185 +122,111 @@ a{
     pointer-events: none;
 }
 
-@media (max-width: 991px) {
-.navigation {
-    left: -300px;
-}
-
-.navigation.active {
-    width: 300px;
-    left: 0;
-}
-
-}
-
-@media (max-width: 480px) {
-
-.navigation {
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 79.8vh;
     width: 100%;
-    left: -100%;
-    z-index: 1000;
 }
 
-.navigation.active {
-    width: 100%;
-    left: 0;
-}
-
-}
-
-a{
-    text-decoration: none;
-}
-
-li{
-    list-style: none;
+.form_box{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin-left: 250px;
+    margin-bottom: -200px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255,255,255,0.6);
+    backdrop-filter: blur(5px);
 }
 
 h1{
-    color:cyan;
-}
-
-h2{
-    color:rgb(90, 103, 249);
-}
-
-h3{
-    color:rgba(0,0,0,0.2);
-}
-
-.bg{
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("net.jpg");
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.btn{
-    background-color: indianred;
-    color: yellow;
-    padding: 2px 8px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: monospace; 
+    color: white;
     text-align: center;
 }
 
-.btn:hover{
-    color:aquamarine;
-    background-color: rgb(41, 192, 226);
-    padding: 3px 8px;
-    border: 5px solid rgb(41, 192, 226);
+button{
+    width: 100%;
+    height: 45px;
+    border-radius: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
 }
 
-.title{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px 80px;
-}
-
-.table{
-    padding:20px;
-}
-
-th,td{
-    text-align: center;
-    padding:10px;
-}
-
-
-.container{
-    position: absolute;
-    right:0;
-    width:85vw;
-    height:100vh;
-  
-}
-
-.container .content{
+.inputbox{
     position: relative;
-    margin-top: 8vh;
-    margin-right: 60px;
-    min-height: 90vh;
+    margin: 35px 0px;
+    width: 300px;
+    border-bottom: 2px solid white;
 }
 
-.container .content .cards{
-    padding:15px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-left: 120px;
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    transition: .5s;
 }
 
-.icon-case img{
-    margin-right: 5px;
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label{
+    top: -5px;
 }
 
-.container .content .cards .card{
-    width: 250px;
-    height: 150px;
-    background-color: black;
-    margin: 20px 60px;   
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border: 2px solid black;
-}
-
-.container .content .cards .card .box h2{
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0px 30px 0px 5px;
     color: white;
 }
 
-.container .content .cards .card .box h3{
-    color:white;
-}
-
-.detail{
-    margin-bottom: 2%;
-    margin-left: 20%;
-    background-color: darkgrey;
-    width: 1000px;
-}
-
-th.a, th.b, th.c, th.d, th.e{
-    text-align: center;
-    border: 1px solid black;
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
     color: white;
-    }
-
-.a{
-    width: 200px;
+    font-size: 1.2em;
+    top: 20px;
 }
 
-.b{
-    width: 75px;
+.user {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    float: right;
 }
 
-.c, .d{
-    width: 100px;
+.user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.e{
-    width: 350px;
-    padding: 5px;
+@media (max-width: 480px) {
+.user {
+    min-width: 40px;
 }
-
-tr{
-    background-color: transparent;
-    border-color: black;
-    height: 80px;
 }
-
-table{
-    border-color: black;
-    border: 3px solid black;
-}
-
-tr.bgc{
-    background-color: #D3D3D3;
-}
-
-
-
-
