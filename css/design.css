@@ -27,7 +27,7 @@ nav{
 }
 
 .logo{
-    width: 120px;
+    width: 80px;
     cursor: pointer;
 }
 
@@ -114,7 +114,7 @@ nav ul li:hover:after{
     text-transform: uppercase;
     font-size: 24px;
     color: #99FFcc;
-    margin: 10px 0px 0px 15px;
+    margin: 20px 0px 0px 15px;
 }
 
 
@@ -134,14 +134,14 @@ nav ul li:hover:after{
 .contentus{
     width:80%;
     position: absolute;
-    top:150%;
+    top:155%;
     transform: translateY(-50%);
     text-align:left;
     color:#fff;
     float: left;
     border: 3px solid white;
     margin-left: 10%;
-    height: 600px;
+    height: 500px;
 }
 
 .content{
