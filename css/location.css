@@ -112,3 +112,54 @@ form button{
     margin: 10px;
     cursor: pointer;
 }
+
+nav{
+    width: 100%;
+    padding: 10px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin:auto;
+    background: black;
+}
+
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 30px;
+    position: relative;
+}
+
+
+nav ul li a {
+    text-decoration:none;
+    color:#00ff00;
+    text-transform: uppercase;
+}
+
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:rgb(254, 240, 255);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li:hover:after{
+    width:100%;
+}
