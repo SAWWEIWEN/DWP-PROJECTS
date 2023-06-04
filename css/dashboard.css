@@ -294,6 +294,7 @@ tr{
 
 table{
     border-color: black;
+    border: 3px solid black;
 }
 
 tr.bgc{

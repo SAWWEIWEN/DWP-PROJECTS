@@ -278,7 +278,7 @@ a{
     align-items: center;
     justify-content: center;
     background-color: #efefef;
-    margin-left: -46%;
+    margin-left: -32%;
     border: 2px solid black;
 }
 
@@ -298,14 +298,14 @@ a{
     width: 1000px;
 }
 
-th.a, th.b, th.c, th.d, th.e{
+th.a, th.b, th.c, th.d, th.e, th.f{
     text-align: center;
     border: 1px solid black;
     color: white;
     }
 
 .a{
-    width: 250px;
+    width: 150px;
 }
 
 .b{
@@ -317,8 +317,12 @@ th.a, th.b, th.c, th.d, th.e{
 }
 
 .e{
-    width: 600px;
+    width: 250px;
     padding: 5px;
+}
+
+.f{
+    width: 50px;
 }
 
 tr{
