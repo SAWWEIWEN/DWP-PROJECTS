@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+p{
+  font-size: 18px;
+}
+
 h1 {
     font-family: Arial;
     font-style: italic;
@@ -23,7 +27,7 @@ h1 {
     background-repeat: no-repeat; 
     background-position: top;
     background-attachment: scroll;
-    background-size: 1600px 450px;
+    background-size: 1600px 650px;
   }
 
   .top {
@@ -47,6 +51,7 @@ h1 {
     display:inline-block;
     margin: 30px;
     position: relative;
+    font-size: 22px;
 }
 
 .top ul li a {
